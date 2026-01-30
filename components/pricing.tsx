@@ -125,15 +125,9 @@ export function Pricing() {
                 variant={plan.popular ? "default" : "outline"}
                 asChild
               >
-                {plan.isCustom ? (
-                  <a href="https://vapi.ai?demo=true&shareKey=f780f3e9-2cdc-4841-bd34-c4c5369df67e&assistantId=c4a596d6-85cd-4c83-93d0-6c0ca6af0f50" target="_blank" rel="noopener noreferrer">
-                    Contactar
-                  </a>
-                ) : (
-                  <a href={`/contratar?plan=${encodeURIComponent(plan.name)}`}>
-                    Contratar
-                  </a>
-                )}
+                <a href={`/contratar?plan=${encodeURIComponent(plan.name)}`}>
+                  {plan.isCustom ? "Contactar" : "Contratar"}
+                </a>
               </Button>
             </div>
           ))}
@@ -142,7 +136,7 @@ export function Pricing() {
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
             ¿Necesitas un plan personalizado?{" "}
-            <a href="https://vapi.ai?demo=true&shareKey=f780f3e9-2cdc-4841-bd34-c4c5369df67e&assistantId=c4a596d6-85cd-4c83-93d0-6c0ca6af0f50" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+            <a href="/contratar" className="text-primary hover:underline">
               Contáctanos
             </a>{" "}
             y lo adaptamos a tus necesidades.

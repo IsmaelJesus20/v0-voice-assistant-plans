@@ -52,7 +52,7 @@ export function Header() {
 
         <div className="hidden items-center md:flex">
           <Button size="sm" asChild>
-            <a href="https://vapi.ai?demo=true&shareKey=f780f3e9-2cdc-4841-bd34-c4c5369df67e&assistantId=c4a596d6-85cd-4c83-93d0-6c0ca6af0f50" target="_blank" rel="noopener noreferrer">Solicitar Demo</a>
+            <a href="/contratar">Contactar</a>
           </Button>
         </div>
 
@@ -102,7 +102,7 @@ export function Header() {
             </Link>
             <div className="flex flex-col gap-2 pt-4">
               <Button size="sm" asChild>
-                <a href="https://vapi.ai?demo=true&shareKey=f780f3e9-2cdc-4841-bd34-c4c5369df67e&assistantId=c4a596d6-85cd-4c83-93d0-6c0ca6af0f50" target="_blank" rel="noopener noreferrer">Solicitar Demo</a>
+                <a href="/contratar">Contactar</a>
               </Button>
             </div>
           </nav>

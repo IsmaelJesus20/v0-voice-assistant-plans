@@ -31,8 +31,8 @@ export function Hero() {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button size="lg" className="gap-2" asChild>
-              <a href="https://vapi.ai?demo=true&shareKey=f780f3e9-2cdc-4841-bd34-c4c5369df67e&assistantId=c4a596d6-85cd-4c83-93d0-6c0ca6af0f50" target="_blank" rel="noopener noreferrer">
-                Solicitar Demo Gratuita
+              <a href="/contratar">
+                Solicitar Información
                 <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
