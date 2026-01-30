@@ -1,30 +1,31 @@
-# Voice assistant plans
+# ISJO AI - Asistente de Voz Inteligente
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Asistente inteligente con IA disponible 24/7 para automatizar la atencion telefonica de tu negocio.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/chuxboxone2-9030s-projects/v0-voice-assistant-plans)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/hygpkv0lllw)
+## Tecnologias
 
-## Overview
+- Next.js 16
+- React 19
+- Tailwind CSS 4
+- TypeScript
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Desarrollo local
 
-## Deployment
+```bash
+pnpm install
+pnpm dev
+```
 
-Your project is live at:
+## Produccion
 
-**[https://vercel.com/chuxboxone2-9030s-projects/v0-voice-assistant-plans](https://vercel.com/chuxboxone2-9030s-projects/v0-voice-assistant-plans)**
+```bash
+pnpm build
+pnpm start
+```
 
-## Build your app
+## Docker
 
-Continue building your app on:
-
-**[https://v0.app/chat/hygpkv0lllw](https://v0.app/chat/hygpkv0lllw)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+```bash
+docker build -t isjo-ai .
+docker run -p 3000:3000 isjo-ai
+```
