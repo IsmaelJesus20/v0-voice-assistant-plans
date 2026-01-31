@@ -16,20 +16,20 @@ export function CTA() {
               ¿Listo para automatizar tu atención telefónica?
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-pretty text-muted-foreground lg:text-lg">
-              Solicita una demo gratuita y te mostraremos cómo ISJO AI puede
-              transformar la comunicación con tus clientes. Agendaremos una
+              Ponte en contacto con el equipo de ISJO AI y te mostraremos cómo
+              podemos transformar la comunicación con tus clientes. Agendaremos una
               reunión para personalizar todo a tu medida.
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button size="lg" className="gap-2" asChild>
-                <a href="/contratar?plan=Demo">
-                  Solicitar Demo Gratuita
+                <a href="/contratar?plan=Contacto">
+                  Contactar con el equipo
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="/contratar?plan=Consulta">Contactar con Ventas</a>
+                <a href="/contratar?plan=Ventas">Hablar con Ventas</a>
               </Button>
             </div>
 

@@ -52,7 +52,7 @@ export function Header() {
 
         <div className="hidden items-center md:flex">
           <Button size="sm" asChild>
-            <a href="/contratar?plan=Demo">Solicitar Demo</a>
+            <a href="/contratar?plan=Contacto">Contactar</a>
           </Button>
         </div>
 
@@ -102,7 +102,7 @@ export function Header() {
             </Link>
             <div className="flex flex-col gap-2 pt-4">
               <Button size="sm" asChild>
-                <a href="/contratar?plan=Demo">Solicitar Demo</a>
+                <a href="/contratar?plan=Contacto">Contactar</a>
               </Button>
             </div>
           </nav>

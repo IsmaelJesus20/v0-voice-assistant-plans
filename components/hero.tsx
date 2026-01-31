@@ -31,8 +31,8 @@ export function Hero() {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button size="lg" className="gap-2" asChild>
-              <a href="/contratar?plan=Demo">
-                Solicitar Demo Gratuita
+              <a href="/contratar?plan=Contacto">
+                Contactar con ISJO AI
                 <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
