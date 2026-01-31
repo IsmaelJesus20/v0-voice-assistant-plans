@@ -23,13 +23,13 @@ export function CTA() {
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button size="lg" className="gap-2" asChild>
-                <a href="https://vapi.ai?demo=true&shareKey=f780f3e9-2cdc-4841-bd34-c4c5369df67e&assistantId=c4a596d6-85cd-4c83-93d0-6c0ca6af0f50" target="_blank" rel="noopener noreferrer">
+                <a href="/contratar?plan=Demo">
                   Solicitar Demo Gratuita
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="https://vapi.ai?demo=true&shareKey=f780f3e9-2cdc-4841-bd34-c4c5369df67e&assistantId=c4a596d6-85cd-4c83-93d0-6c0ca6af0f50" target="_blank" rel="noopener noreferrer">Contactar con Ventas</a>
+                <a href="/contratar?plan=Consulta">Contactar con Ventas</a>
               </Button>
             </div>
 
