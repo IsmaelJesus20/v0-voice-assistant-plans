@@ -1,11 +1,12 @@
 import { NextResponse } from "next/server";
 
+const N8N_WEBHOOK_URL = "https://n8n-n8n.sqnokr.easypanel.host/webhook/33722926-1608-460d-b41f-590b51939ecd";
+
 export async function POST(request: Request) {
   try {
     const data = await request.json();
     const { nombre, apellido, telefono, email, plan } = data;
 
-    // Validar datos
     if (!nombre || !apellido || !telefono || !email) {
       return NextResponse.json(
         { error: "Todos los campos son obligatorios" },
@@ -13,24 +14,34 @@ export async function POST(request: Request) {
       );
     }
 
-    // Log de la solicitud (en producción conectar con base de datos o servicio de email)
-    console.log("Nueva solicitud de contratación:", {
-      plan,
+    const webhookData = {
       nombre,
       apellido,
       telefono,
       email,
-      fecha: new Date().toLocaleString("es-ES"),
+      plan: plan || "No especificado",
+      fecha: new Date().toISOString(),
+    };
+
+    const webhookResponse = await fetch(N8N_WEBHOOK_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(webhookData),
     });
 
-    // Aquí se podrían agregar integraciones futuras:
-    // - Envío de emails con Resend
-    // - Guardar en base de datos
-    // - Notificación por webhook
+    if (!webhookResponse.ok) {
+      console.error("Error enviando a n8n:", webhookResponse.status);
+      return NextResponse.json(
+        { error: "Error al procesar la solicitud" },
+        { status: 500 }
+      );
+    }
 
-    return NextResponse.json({ 
+    return NextResponse.json({
       success: true,
-      message: "Solicitud recibida correctamente" 
+      message: "Solicitud recibida correctamente"
     });
   } catch (error) {
     console.error("Error procesando solicitud:", error);
