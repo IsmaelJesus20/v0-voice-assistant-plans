@@ -19,8 +19,8 @@ export function Hero() {
           </div>
 
           <h1 className="mx-auto max-w-4xl text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-7xl">
-            Tu asistente inteligente,{" "}
-            <span className="text-primary">siempre activo</span>
+            Nunca pierdas otra reserva por{" "}
+            <span className="text-primary">no poder coger el teléfono</span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg text-muted-foreground lg:text-xl">
